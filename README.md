@@ -74,9 +74,11 @@ log_data/2018/11/2018-11-13-events.json
 
 ## Results
 
+Below are the queries results on terminal. could be  also run query on Redashif console.
+
 - Top 10 songs by number of song play times
 - Top 10 Artist by number of song play times
-Below are the queries results on terminal. could be  also run query on Redashif console.
+
 
 ![alt text](images/result.png "Log data")
 
