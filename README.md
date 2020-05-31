@@ -10,14 +10,15 @@ In this project, data warehouses and AWS to build an ETL pipeline for a database
 
 
 ## How to run
-- STEP 1: Set up AWS on console](https://aws.amazon.com/) or follow IaCs from `aws_setup.ipynb` 
+- STEP 1: Set up AWS on [console](https://aws.amazon.com/) or follow IaC from `aws_setup.ipynb` 
 - STEP 2: Run `create_tables.py` to create staging tables and analytics tables (Fact&Dim tables)
 - STEP 3: Run `etl.py` to begin ETL process, extract file from S3, load into staging table and tranform data to analytic tables.
 
 
 ## The AWS Set Up
-![alt text](images/aws_setup_step.png "Schema")
+
 AWS Setup using IaC on `aws_setup.ipynb`
+![alt text](images/aws_setup_step.png "AWS")
 - STEP 0: Save AWS SECRET and access KEY from AWS Console
 - STEP 1: Create IAM ROLE / Save the IAM_ROLE_ARN
 - STEP 2: Create Redshift Cluster / Save CLUSTER_ENDPOINT
@@ -27,8 +28,9 @@ AWS Setup using IaC on `aws_setup.ipynb`
 
 
 ## The ETL
-![alt text](images/etl_step.png "Schema")
+
 After the AWS instances ready, begin the ETL process. 
+![alt text](images/etl_step.png "ETL")
 - STEP 0: Activate S3 service and check data on buckets.
 - STEP 1: Extract data from S3 to Redshift as Staging tables.
 - STEP 2: Transform and Load data into Analytics tables.
@@ -74,8 +76,8 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 ## Results
 
+- Top 10 songs by number of song play times
+- Top 10 Artist by number of song play times
 
-
-
-
+![alt text](images/result.png "Log data")
 
